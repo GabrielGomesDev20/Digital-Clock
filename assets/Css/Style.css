@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+body{
+    height: 100vh;
+    /* background: linear-gradient(120deg, #ffe53bd8, #ff2525da); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Background verdinho */
+body{
+    background: #004f75;
+    background: linear-gradient(45deg, #DA70D6,#9400D3, #004f75, #018252,#00FF7F);
+    background-size: 400%;
+    -webkit-animation: animaFundo 15s ease infinite;
+    -moz-animation: animaFundo 15s ease infinite;
+    animation: animaFundo 15s ease infinite;
+  }
+
+
+  /* Background cheio de quadradinhos */
+/* body {
+    background-image: linear-gradient(45deg, transparent 20%, black 25%, transparent 25%),
+                      linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+                      linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+                      radial-gradient(gray 2px, transparent 0);
+    background-size: 30px 30px, 30px 30px;
+} */
+
+
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(5, 5, 5, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span{
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
+
+}
+
+@keyframes animaFundo {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
